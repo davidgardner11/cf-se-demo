@@ -1,3 +1,6 @@
+For this to work, you will need to VPN into the se-demo cf cluster
+You will also need to set the cluster's app manager password in the gradle.properties file within this folder
+
 1.) Push v1 of demo app: ./gradlew cfDeploy -Pv1
 2.) Make note of deployed app's route
 3.) Generate generic/public route for demo app: ./gradlew cfSwapDeployed
