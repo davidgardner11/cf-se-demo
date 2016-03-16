@@ -1,0 +1,33 @@
+apply plugin: 'cloudfoundry'
+if (project.hasProperty('v1')) {
+    cloudfoundry {
+        target = "https://api.10.141.158.128.xip.io"
+        organization = "ctl.io"
+        space = "development"
+        host = 'se-demo'
+        domain = "10.141.158.128.xip.io"
+//        file = file("${jar.archivePath}")
+        file = file("./bob-demo-v1.jar")
+        buildpack = 'https://github.com/cloudfoundry/java-buildpack/'
+        memory = 512
+        instances = 1
+        trustSelfSignedCerts = true
+        variants = ['-blue', '-green']
+    }
+}
+
+if (project.hasProperty('v2')) {
+    cloudfoundry {
+        target = "https://api.10.141.158.128.xip.io"
+        organization = "ctl.io"
+        space = "development"
+        host = 'se-demo'
+        domain = "10.141.158.128.xip.io"
+        file = file("./bob-demo-v2.jar")
+        buildpack = 'https://github.com/cloudfoundry/java-buildpack/'
+        memory = 512
+        instances = 1
+        trustSelfSignedCerts = true
+        variants = ['-blue', '-green']
+    }
+}
