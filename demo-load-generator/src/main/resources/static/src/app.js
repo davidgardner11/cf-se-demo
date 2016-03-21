@@ -10,17 +10,12 @@ export class App {
     delay = 1000;
 
     constructor(http) {
-        http.configure(config => {
-            config
-                .useStandardConfiguration()
-                .withBaseUrl('http://localhost:8081');
-        });
-
         this.http = http;
     }
 
     generateLoad() {
-        return this.http.fetch("/load/" + this.piDigits * 3 + "/requestCount/" + this.repeat + "/delayMS/" + this.delay);
+        let result = this.http.fetch("/load/" + this.piDigits * 3 + "/requestCount/" + this.repeat + "/delayMS/" + this.delay);
         alert(`Pi Digits: ${this.piDigits} Repeat: ${this.repeat} Delay: ${this.delay}`);
+        return result;
     }
 }
