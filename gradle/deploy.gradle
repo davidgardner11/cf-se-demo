@@ -8,10 +8,10 @@ if (project.hasProperty('v2')) {
 
 cloudfoundry {
     target = "https://api.10.141.158.128.xip.io"
-    organization = "ctl.io"
-    space = "development"
-    host = 'se-demo'
-    domain = "10.141.158.128.xip.io"
+    organization = "${cloudfoundry.organization}"
+    space = "${cloudfoundry.space}"
+    host = "${cloudfoundry.host}"
+    domain = "${cloudfoundry.domain}"
     file = file("./bob-demo-" + demoFileVersion + ".jar")
     buildpack = 'https://github.com/cloudfoundry/java-buildpack/'
     memory = 512
