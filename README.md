@@ -1,7 +1,5 @@
 # Cloud Foundry Demo App
 
-## For this to work, you will need to VPN into the se-demo cf cluster
-
 ## Instructions
 1. Use an RDP (remote desktop) client and remote into the demo user box specified in the email.
 1. The following instructions should all take place on the Windows VM
