@@ -4,8 +4,8 @@
 ## Requirements
 + Java 8 JDK
 + VPN client that can open ovpn files. Here's a list of some portable VPN clients for Windows
-- [OpenVPN Portable - Windows](https://sourceforge.net/projects/ovpnp/files/latest/download)
-- [TunnelBlick - Mac](https://tunnelblick.net/release/Tunnelblick_3.6.0a_build_4543.4546.dmg)
+    - [OpenVPN Portable - Windows](https://sourceforge.net/projects/ovpnp/files/latest/download)
+    - [TunnelBlick - Mac](https://tunnelblick.net/release/Tunnelblick_3.6.0a_build_4543.4546.dmg)
 
 ## Instructions
 1. Unzip the GitHub sales demo project
