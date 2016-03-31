@@ -3,7 +3,7 @@
 ## Instructions
 1. Use an RDP (remote desktop) client and remote into the demo user box specified in the email.
 1. The following instructions should all take place on the Windows VM
-1. Open a browser, preferably Chrom, navigate to the [demo repository](http://github.com/tcmartin24/cf-se-demo) and download the zip file
+1. Open a browser, preferably Chrome, navigate to the [demo repository](http://github.com/tcmartin24/cf-se-demo) and download the zip file
 1. Unzip the file. You may want to use 7-zip which (may) be installed already.
 1. Open Power Shell (there's a small icon for it at the bottom left of the screen near the start menu)
 1. If you downloaded the zip file to the Downloads directory (default), type: cd Downloads\cf-se-demo
