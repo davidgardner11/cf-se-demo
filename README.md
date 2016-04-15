@@ -1,6 +1,8 @@
 # Cloud Foundry Demo App
 
-## Instructions
+
+
+## Windows Instructions
 1. Use an RDP (remote desktop) client and remote into the demo user box specified in the email.
 1. The following instructions should all take place on the Windows VM
 1. Open a browser, preferably Chrome, navigate to the [demo repository](http://github.com/tcmartin24/cf-se-demo) and download the zip file
@@ -16,3 +18,8 @@
 1. Push v2 of demo app: ./gradlew cfLogin cfDeploy -Pv2
 1. Make note of v2's route
 1. You may now switch the public route from v1 to v2: ./gradlew cfLogin cfSwapDeployed
+
+
+## Useful References
+1. https://docs.cloudfoundry.org/buildpacks/java/build-tool-int.html
+2. 

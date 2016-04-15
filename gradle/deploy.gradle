@@ -7,25 +7,17 @@ if (project.hasProperty('v2')) {
 }
 
 cloudfoundry {
-    target = 'https://api.10.141.158.128.xip.io'
+    target = 'https://api.useast.appfog.ctl.io'
     organization = "${cfOrganization}"
     space = "${cfSpace}"
     host = "${cfHost}"
-    domain = '10.141.158.128.xip.io'
+    domain = 'useast.appfog.ctl.io'
     file = file("./bob-demo-" + demoFileVersion + ".jar")
     buildpack = 'https://github.com/cloudfoundry/java-buildpack/'
     memory = 512
     instances = 1
     trustSelfSignedCerts = true
     variants = ['-blue', '-green']
-
-    services {
-        'pi-gen-autoscaler' {
-            label = 'app-autoscaler'
-            plan = 'gold'
-            bind = true
-        }
-    }
 }
 
 task printProps << {
