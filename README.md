@@ -1,4 +1,4 @@
-# Cloud Foundry Demo App
+# Cloud Foundry Blue-Green Demo
 
 
 
